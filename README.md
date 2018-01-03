@@ -1,2 +1,2 @@
 # Rashed.Qu
-HTML School Projec
+HTML School Project
