@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<title>WeatherHub</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+
+html, body {
+margin:0;
+padding:0;
+overflow:hidden
+}
+
+.button:hover {
+border:2px solid orange;
+border-bottom-color:#d57b08;
+border-right-color:#d57b08;
+}  
+
+#submit{
+color:orange;
+width:50%;
+margin-left:25%;
+
+border-radius:3px;
+font-size:17px;
+
+}
+
+
+#title{
+background-color:white;
+text-align:center;
+vertical-align:middle;
+line-height:30px;
+color:orange;
+font-weight:bold;
+margin-bottom:0;
+width:100%;
+border:solid 1px #c5c2c2;
+
+
+}
+
+#body{
+background-color:#d6d3d2;
+position:relative;
+padding:0;
+
+
+}
+
+.titlebox{
+width:100%;
+margin:auto;
+
+
+}
+
+#toolbar{
+
+border: solid 1px #19212a;
+
+color:#fff;
+width:99,5%;
+margin:auto;
+height:5%;
+padding:8px;
+background-color:#19212a;
+margin-bottom: 20px;
+padding-left:20%;
+
+}
+
+#button1{
+text-decoration: none;
+color:white;
+font-size: 17px;
+display:inline;
+margin:auto;
+
+border-radius:3px;
+
+}
+
+#select{
+color:orange;
+floar:right;
+margin-left:50%;
+display:inline;
+width:150px;
+background-color:buttonface;
+
+}
+
+#mainbody{
+background-color:#fff;
+border: solid 1px #c5c2c2;
+border-radius:4px;
+width:600px;
+height:520px;
+float: left;
+padding:5px;
+position:relative;
+
+}
+
+#poll{
+background-color:white;
+border: solid 1px #c5c2c2;
+border-radius:4px;
+width:340px;
+height:25%;
+float:right;
+padding:5px;
+padding-bottom:10px;
+
+}
+
+#video{
+background-color:white;
+border: solid 1px #c5c2c2;
+border-radius:4px;
+width:340px;
+height 200px;
+float:right;
+padding:5px;
+}
+
+#cityname{
+color:orange;
+margin-left:40%;
+font-style:bold;
+font-size: 30px;
+
+}
+
+#amman{
+width:600px;
+}
+
+#email{
+color:black;
+width:500px;
+
+border: solid 1px #19212a;
+height:22px;
+
+}
+
+#newsletter{
+border: solid 1px #19212a;
+
+color:#fff;
+width:99,5%;
+margin:auto;
+height:7%;
+padding:8px;
+background-color:#19212a;
+margin-top:580px;
+padding-left:20%;
+
+}
+#newsletterbutton{
+
+color:orange;
+width:100px;
+
+
+border-radius:3px;
+font-size:17px;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+<body id="body">
+
+<div class="titlebox">
+
+       <h1 id="title"><i class="material-icons" style="font-size:40px;color:Orange; vertical-align:-8px">cloud</i> WeatherHub</h1>
+
+</div>
+
+<div id="toolbar" >
+
+       <button id="button1" class="button" ><a style="color: orange; text-decoration: none;" href="www.google.com">Article of the day</a></button>
+
+<select id="select">
+       <option selected hidden >Select your city</option>
+       <option>New-York</option>
+       <option>London</option>
+       <option>hongkong</option>
+</select>
+
+</div >
+
+<div id="fakebody" style="padding-left:18%; padding-right:18%;">
+
+
+       <div id="mainbody">
+
+
+              <a class="weatherwidget-io" href="https://forecast7.com/en/31d9535d93/amman/" data-label_1="AMMAN" data-label_2="WEATHER" data-theme="original" data-baseColor="#19212a" data-highColor="#dd7245" style="opacity: 1;"; >AMMAN WEATHER</a>
+              <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");
+              </script>
+
+       <img src="amman.jpg" id="amman">
+
+
+
+
+</div>
+
+<div id="poll">
+
+       <form>
+       <h2>sample poll </h2>
+       <label><input type="radio" name="poll" value="amazing">Amazing </label><br>
+       <label><input type="radio" name="poll" value="great">Great</label><br>
+       <label><input type="radio" name="poll" value="good">Good</label><br>
+       <label><input type="radio" name="poll" value="bad">Bad</label><br><br>
+
+       <button type="submit" id="submit" class="button"> submit</button>
+</form>
+
+</div>
+
+
+<div id="video">
+
+       <iframe width="340" height="240" src="https://www.youtube.com/embed/eGhBABLOawA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+</div>
+
+<div id="newsletter" >
+       <label> <input type="text" id="email" placeholder="if you wanna subscribe to our newsletter please enter your email"></label> 
+       <button type="submit" id="newsletterbutton" class="button"> submit</button> 
+       <span></span>
+</div >
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
